@@ -83,10 +83,10 @@ const raw = [
 ];
 const tools = raw.map((r,i) => ({id:i, name:r[0], cat:r[1], price:r[2], rate:r[3], url:r[4], desc:r[5], kw:r[6], host:r[7] || new URL(r[4]).hostname}));
 // اسم الأيقونة في Simple Icons (لوجوهات SVG عالية الجودة) للأدوات المعروفة
-const SI = {'ChatGPT':'openai','Whisper':'openai','Claude':'anthropic','Gemini':'googlegemini','Perplexity':'perplexity','Grammarly':'grammarly','DeepL':'deepl',
+const SI = {'ChatGPT':'openai','Whisper':'openai','Claude':'claude','Gemini':'googlegemini','Perplexity':'perplexity','Grammarly':'grammarly','DeepL':'deepl',
   'Notion':'notion','Figma':'figma','Canva':'canva','Replit':'replit','Hugging Face':'huggingface','Ollama':'ollama','Zapier':'zapier','n8n':'n8n',
-  'GitHub Copilot':'githubcopilot','Midjourney':'midjourney','Framer':'framer','CapCut':'capcut','ElevenLabs':'elevenlabs','Le Chat':'mistralai','Grok':'x',
-  'Adobe Firefly':'adobe','Adobe Podcast':'adobe','Cursor':'cursor','Windsurf':'windsurf','Google AI Studio':'google','NotebookLM':'googlegemini'};
+  'GitHub Copilot':'githubcopilot','Midjourney':'midjourney','Framer':'framer','CapCut':'capcut','ElevenLabs':'elevenlabs','Le Chat':'mistralai','Grok':'grok','Elicit':'elicit','Consensus':'consensus','v0':'vercel','Continue':'continue','Cline':'cline','LM Studio':'lmstudio','Warp':'warp',
+  'Adobe Firefly':'adobe','Adobe Podcast':'adobe','Cursor':'cursor','Windsurf':'windsurf','Google AI Studio':'google',};
 // ترتيب المحاولات: لو مصدر فشل أو رجّع أيقونة صغيرة، بنجرب اللي بعده
 const logoSrcs = t => [
   SI[t.name] && `https://cdn.simpleicons.org/${SI[t.name]}`,
