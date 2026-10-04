@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Hub | دليل أدوات الذكاء الاصطناعي</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo"><i>AI</i> Hub</div>
+  <nav><button class="on" data-p="dir">الدليل</button><button data-p="saved">المحفوظات<span class="badge" id="nSaved">0</span></button></nav>
+  <button class="ic" id="theme" aria-label="تغيير المظهر">☀️</button>
+</header>
+
+<main>
+<section class="page show" id="dir">
+  <div class="hero">
+    <h1>كل أدوات <em>الذكاء الاصطناعي</em><br>في مكان واحد</h1>
+    <p>دليل مرتب للأدوات اللي تستاهل، مصنفة حسب المجال والسعر. دوّر، قارن، واحفظ اللي يعجبك ترجعله بعدين.</p>
+    <div class="sbox"><span class="gl">🔍</span><input id="q" type="search" autocomplete="off" aria-label="بحث"><kbd>/</kbd></div>
+    <div class="stats"><div><b data-n="0" id="sTotal">0</b><span>أداة</span></div><div><b id="sFree">0</b><span>مجانية بالكامل</span></div><div><b id="sSaved">0</b><span>محفوظاتك</span></div></div>
+  </div>
+  <div class="bar">
+    <div class="tabs" id="tabs"></div>
+    <div class="row2" id="chips"></div>
+  </div>
+  <div class="count" id="count"></div>
+  <div class="grid" id="grid"></div>
+</section>
+
+<section class="page" id="saved">
+  <div class="sh"><div><h2>أدواتي المحفوظة</h2><p>اللي حفظته للرجوع إليه، متخزن على جهازك.</p></div>
+    <div class="acts"><button class="btn o" id="copy">📋 انسخ القايمة</button><button class="btn o" id="clear">🗑 امسح الكل</button></div></div>
+  <div class="grid" id="sgrid" style="padding-top:10px"></div>
+</section>
+</main>
+<footer>التصنيفات (مجاني / Freemium / مدفوع) والتقييمات تقديرية وممكن تتغير مع الوقت، راجع الموقع الرسمي لكل أداة قبل ما تشترك. اللوجوهات بتتحمل من الإنترنت (ولو مظهرتش بيظهر حرف بديل، ولازم يكون فيه نت). تقييمك الشخصي وحفظك بيتخزنوا على جهازك بس.</footer>
+
+<div class="modal" id="modal"><div class="box" id="mbox"></div></div><div id="toast"></div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
